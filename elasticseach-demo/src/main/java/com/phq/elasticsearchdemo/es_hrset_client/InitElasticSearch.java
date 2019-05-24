@@ -8,7 +8,7 @@ public class InitElasticSearch {
    
 	//elasticsearch 初始化
 	public static RestHighLevelClient  getClient() {
-		HttpHost https  = new HttpHost("127.0.0.1",9200,"http");
+		HttpHost https  = new HttpHost("192.168.1.130",9200,"http");
 		RestHighLevelClient client =new  RestHighLevelClient(RestClient.builder(https));
 		return client;
 	}
